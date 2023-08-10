@@ -12,6 +12,7 @@ import { LoginModal } from './Auth/Login';
 import { HomeScreen } from './Home';
 import { Splash } from './Splash';
 import { Empty } from './Empty';
+import { SideMenu } from './SideMenu';
 
 // function ThemeChangerHandler({ children }) {
 //   const darkMode = useSelector((state) => state.app.darkMode);
@@ -30,7 +31,7 @@ export function registerScreens() {
   S.set(Screens.Splash, Splash);
   S.set(Screens.Home, HomeScreen);
   S.set(Screens.Empty, Empty);
-
+  S.set(Screens.SideMenu, SideMenu);
   S.forEach((Component, screenName) => {
     return Navigation.registerComponent(
       screenName,

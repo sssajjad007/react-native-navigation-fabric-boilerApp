@@ -3,7 +3,12 @@ import React, { useEffect } from 'react';
 import { startApp } from '@navigation/navigation';
 import CustomNavigation from '@navigation/library';
 
-export function Splash({ componentId }) {
+import { NavigationFunctionComponent } from 'react-native-navigation';
+interface Props {
+  name: string;
+}
+
+export const Splash: NavigationFunctionComponent<Props> = ({ componentId, name }) => {
   useEffect(() => {
     setTimeout(() => {
       startApp();
@@ -17,4 +22,4 @@ export function Splash({ componentId }) {
       <ActivityIndicator size="large" color="#0000ff" />
     </View>
   );
-}
+};
