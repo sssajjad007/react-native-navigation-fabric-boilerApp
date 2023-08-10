@@ -1,0 +1,15 @@
+diff --git a/node_modules/react-native-navigation/react-native.config.js b/node_modules/react-native-navigation/react-native.config.js
+index 17feda2..de80338 100644
+--- a/node_modules/react-native-navigation/react-native.config.js
++++ b/node_modules/react-native-navigation/react-native.config.js
+@@ -8,10 +8,6 @@ module.exports = {
+         packageInstance: 'new NavigationPackage(reactNativeHost)',
+       },
+     },
+-    assets: [],
+-    hooks: {
+-      postlink: 'node node_modules/react-native-navigation/autolink/postlink/run',
+-    },
+   },
+   project: {
+     android: {
