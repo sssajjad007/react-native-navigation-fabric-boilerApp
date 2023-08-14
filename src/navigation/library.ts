@@ -1,7 +1,7 @@
 import { Navigation, Layout, Options, LayoutRoot } from 'react-native-navigation';
 import get from 'lodash/get';
 import isString from 'lodash/isString';
-import { stack, component } from './commons/Layouts';
+import { component, stack } from './commons/layouts';
 
 type ComponentIdProp = { props: { componentId: string } };
 type SelfOrCompId = string | ComponentIdProp;
