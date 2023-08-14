@@ -13,7 +13,7 @@ public class MainActivity extends NavigationActivity {
   
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    RNBootSplash.init(this);
+    RNBootSplash.init(this, R.style.BootTheme);
     super.onCreate(null);
     I18nUtil sharedI18nUtilInstance = I18nUtil.getInstance();
     sharedI18nUtilInstance.allowRTL(getApplicationContext(), false);
