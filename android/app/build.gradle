@@ -73,6 +73,14 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
+  splits {
+        abi {
+            reset()
+            enable true
+            universalApk false
+            include "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
+    }
     namespace "com.rn72_wix"
     defaultConfig {
         applicationId "com.rn72_wix"
