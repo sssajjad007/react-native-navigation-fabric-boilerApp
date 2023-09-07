@@ -2,7 +2,6 @@
  * remove this line when use
  */
 export {};
-// import {CustomOmit} from '@common';
 // import messaging, {
 //   FirebaseMessagingTypes,
 // } from '@react-native-firebase/messaging';
